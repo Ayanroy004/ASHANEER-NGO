@@ -1,7 +1,5 @@
-
-import { CiApple } from "react-icons/ci";
 import { FaGraduationCap } from "react-icons/fa";
-import { GiHeartPlus } from "react-icons/gi";
+import { GiHeartPlus, GiShinyApple } from "react-icons/gi";
 import { IoMedicalOutline } from "react-icons/io5";
 import { LuHousePlus, LuTreePine } from "react-icons/lu";
 
@@ -10,7 +8,9 @@ function Services() {
     <>
       <section className="ms-37.5 me-37.5">
         <div>
-          <h2 className="text-center text-5xl font-extrabold my-10">Our Services</h2>
+          <h2 className="text-center text-4xl font-bold text-gray-800 my-10">
+            Our Services
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="border p-4 rounded-lg shadow hover:shadow-lg transition flex items-center gap-4">
               {<LuHousePlus className="text-8xl font-normal text-red-400" />}
@@ -33,7 +33,7 @@ function Services() {
               </div>
             </div>
             <div className="border p-4 rounded-lg shadow hover:shadow-lg transition flex items-center gap-4">
-              <CiApple className="text-8xl font-normal text-red-500" />
+              <GiShinyApple className="text-8xl font-normal text-red-500" />
               <div>
                 <h3 className="text-xl font-semibold mb-2">
                   Food distribution to needy
@@ -67,7 +67,7 @@ function Services() {
               </div>
             </div>
             <div className="border p-4 rounded-lg shadow hover:shadow-lg transition flex items-center gap-4">
-              <IoMedicalOutline  className="text-8xl font-normal text-yellow-500" />
+              <IoMedicalOutline className="text-8xl font-normal text-yellow-500" />
               <div>
                 <h3 className="text-xl font-semibold mb-2">Services 6</h3>
                 <p>
