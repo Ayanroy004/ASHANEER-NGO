@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function ShortStory() {
   return (
     <section className="ms-37.5 me-37.5">
-      <h1 className="text-center text-5xl font-extrabold my-10">Our Story</h1>
+      <h1 className="text-center text-4xl font-bold text-gray-800 my-10">Our Story</h1>
       <div className="text-center">
         <h2 className="text-lg mb-4 mt-10">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
@@ -28,7 +28,7 @@ function ShortStory() {
           repudiandae, veniam incidunt numquam necessitatibus perferendis
           nesciunt iste voluptatem ad nobis illo.
         </h2>
-        <Link className="text-blue-600" to={"/our-story"}>Learn More {">"}</Link>
+        <Link className="text-blue-600" to={"/about"}>Learn More {">"}</Link>
       </div>
     </section>
   );
