@@ -11,7 +11,7 @@ export interface AboutProps {
 function About() {
   return (
     <>
-      <Banner />
+      <Banner text="ABOUT US"/>
       <section>
         <div className="ms-37.5 me-37.5 pt-20">
           <Navigation data={{ point: "OUR STORY" }} />

@@ -1,6 +1,7 @@
 import { Menu } from "antd";
 import { AiOutlineDown } from "react-icons/ai";
 import { useLocation, useNavigate } from "react-router-dom";
+import Button from "./Button";
 
 const items = [
   { key: "/", label: "Home" },
@@ -32,10 +33,10 @@ export default function AppHeader() {
   const location = useLocation();
 
   return (
-    <header className="shadow-xl px-6 h-16 fixed top-0 left-0 right-0 bg-white z-50 ">
+    <header className="px-6 h-16 fixed top-0 left-0 right-0  z-50 bg-white/50 backdrop-blur-md shadow-xl">
       <div className="flex items-center justify-around h-full">
         <div
-          className="text-xl font-bold mr-10 cursor-pointer"
+          className="text-xl font-bold  cursor-pointer"
           onClick={() => navigate("/")}
         >
           NGO LOGO
@@ -48,6 +49,13 @@ export default function AppHeader() {
           onClick={(e) => navigate(e.key)}
           className="border-b-0 font-medium"
           style={{ backgroundColor: "transparent" }}
+        />
+        <Button
+          data={{
+            text: "Donate Now",
+            css: "btn ",
+          }}
+          onClick={() => navigate("/contact-us")}
         />
       </div>
     </header>

@@ -1,5 +1,16 @@
 @import "tailwindcss";
 .bebas-neue-regular {
   font-family: "Bebas Neue", sans-serif;
-  
+}
+.btn {
+  background-color: #3b9797;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #1d4747fa;
 }
