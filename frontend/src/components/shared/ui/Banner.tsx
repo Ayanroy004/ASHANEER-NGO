@@ -8,12 +8,16 @@ export interface BannerProps {
 const Banner: React.FC<BannerProps> = ({ text }) => {
   return (
     <section className="h-screen overflow-hidden mt-16 relative">
+      {/* Overlay */}
       {text && (
-        <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center left z-5 ">
-          <h1 className="text-white text-6xl font-extrabold drop-shadow-2xl drop-shadow-black">
-            {text}
-          </h1>
-        </div>
+        <>
+          <div className="absolute inset-0 bg-black/30 z-4"></div>
+          <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center left z-5 ">
+            <h1 className="text-white text-6xl font-extrabold drop-shadow-2xl drop-shadow-black">
+              {text}
+            </h1>
+          </div>
+        </>
       )}
 
       <Carousel autoplay pauseOnHover={false} className="h-full">

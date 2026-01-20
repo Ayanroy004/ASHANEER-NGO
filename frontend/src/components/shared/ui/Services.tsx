@@ -74,7 +74,7 @@ function Services() {
               <p className="text-gray-600">{service.desc}</p>
 
               {/* Accent line */}
-              <div className="mt-4 h-1 w-12 rounded bg-gradient-to-r from-primary to-transparent opacity-0 transition group-hover:opacity-100" />
+              <div className="mt-4 h-1 w-12 rounded bg-linear-to-r from-primary to-transparent opacity-0 transition group-hover:opacity-100" />
             </div>
           </Link>
         ))}
