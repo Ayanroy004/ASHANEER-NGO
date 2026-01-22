@@ -9,7 +9,7 @@ import ContactUs from "./ContactUs";
 function Home() {
   return (
     <>
-      <Banner />
+      <Banner text="HEAD LINE" />
       <ShortStory />
       <Services />
       <Goals />
