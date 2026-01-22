@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function ShortStory() {
   return (
-    <section className="ms-37.5 me-37.5">
+    <section className="grid grid-cols-1 max-w-7xl xl:px-0 sm:px-4 px-4 mx-auto">
       <h1 className="text-center text-4xl font-bold text-gray-800 my-10">Our Story</h1>
       <div className="text-center">
         <h2 className="text-lg mb-4 mt-10">

@@ -14,11 +14,11 @@ function Footer() {
         {/* Brand */}
         <div className="mb-10 flex flex-col items-center">
           {/* Logo */}
-          <img
+          {/* <img
             src="/logo.png" // place logo in public folder
             alt="NGO Logo"
-            className="mb-3 h-16 w-16 object-contain"
-          />
+            className="mb-3 h-30 w-auto object-contain"
+          /> */}
 
           {/* Brand Name */}
           <h1 className="text-2xl font-extrabold tracking-wide">
@@ -44,7 +44,7 @@ function Footer() {
           <input
             type="email"
             placeholder="Enter your email address"
-            className="w-full sm:w-96 px-4 py-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-red-500"
+            className="w-full sm:w-96 px-4 py-3 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-red-500"
           />
           <button className="px-6 py-3 bg-red-500 rounded-md font-semibold hover:bg-red-600 transition-all duration-300 shadow-lg">
             Subscribe

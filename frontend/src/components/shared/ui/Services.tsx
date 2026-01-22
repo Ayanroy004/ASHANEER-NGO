@@ -52,7 +52,7 @@ const services = [
 function Services() {
   return (
     <section className="max-w-7xl mx-auto px-4 py-16">
-      <h2 className="text-center text-4xl font-extrabold text-gray-800 mb-12">
+      <h2 className="text-center text-4xl font-bold text-gray-800 mb-12">
         Our Services
       </h2>
 
