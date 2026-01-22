@@ -2,7 +2,7 @@ import { Menu } from "antd";
 import { AiOutlineDown } from "react-icons/ai";
 import { useLocation, useNavigate } from "react-router-dom";
 import Button from "./Button";
-import LogoImage from "../../../../public/logo.png"
+import LogoImage from "../../../../public/logo.png";
 const items = [
   { key: "/", label: "Home" },
   { key: "/about", label: "ABOUT US" },
@@ -33,35 +33,39 @@ export default function AppHeader() {
   const location = useLocation();
 
   return (
-    <header className="px-6 h-30 fixed top-0 left-0 right-0  z-50 bg-white/50 backdrop-blur-md shadow-xl">
-      <div className="flex items-center justify-around h-full">
-        <div
-          className="text-xl font-bold cursor-pointer flex items-center"
-          onClick={() => navigate("/")}
-        >
-          <img
-            src={LogoImage}
-            alt="Logo"
-            className="h-30 w-auto" // adjust height as needed
-          />
-        </div>
+    <>
+      <div className="mb-30">
+        <header className="px-6 h-30 fixed top-0 left-0 right-0  z-50 bg-white/50 backdrop-blur-md shadow-xl">
+          <div className="flex items-center justify-around h-full">
+            <div
+              className="text-xl font-bold cursor-pointer flex items-center"
+              onClick={() => navigate("/")}
+            >
+              <img
+                src={LogoImage}
+                alt="Logo"
+                className="h-30 w-auto" // adjust height as needed
+              />
+            </div>
 
-        <Menu
-          mode="horizontal"
-          selectedKeys={[location.pathname]}
-          items={items}
-          onClick={(e) => navigate(e.key)}
-          className="border-b-0 font-medium"
-          style={{ backgroundColor: "transparent" }}
-        />
-        <Button
-          data={{
-            text: "Donate Now",
-            css: "btn ",
-          }}
-          onClick={() => navigate("/contact-us")}
-        />
+            <Menu
+              mode="horizontal"
+              selectedKeys={[location.pathname]}
+              items={items}
+              onClick={(e) => navigate(e.key)}
+              className="border-b-0 font-medium"
+              style={{ backgroundColor: "transparent" }}
+            />
+            <Button
+              data={{
+                text: "Donate Now",
+                css: "btn ",
+              }}
+              onClick={() => navigate("/contact-us")}
+            />
+          </div>
+        </header>
       </div>
-    </header>
+    </>
   );
 }

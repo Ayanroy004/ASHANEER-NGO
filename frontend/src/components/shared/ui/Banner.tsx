@@ -7,7 +7,7 @@ export interface BannerProps {
 
 const Banner: React.FC<BannerProps> = ({ text }) => {
   return (
-    <section className="h-screen overflow-hidden mt-16 relative">
+    <section className="h-screen overflow-hidden relative">
       {/* Overlay */}
       {text && (
         <>
