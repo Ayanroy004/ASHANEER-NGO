@@ -15,7 +15,7 @@ function Navigation({ data }: AboutProps) {
         {navItems.map((item) => (
           <div
             key={item}
-            className={`${item === data.point ? "bg-green-400" : ""}  md:text-base text-xs p-6 w-full text-center`}
+            className={`${item === data.point ? "bg-green-400" : ""}  md:text-base text-xs md:p-6 p-2 flex items-center justify-center w-full`}
           >
             <h3>{item}</h3>
           </div>

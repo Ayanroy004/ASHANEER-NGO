@@ -5,7 +5,7 @@ import { LuBicepsFlexed } from "react-icons/lu";
 import { BiShieldPlus } from "react-icons/bi";
 
 export interface AboutProps {
-  data?: { point: string };
+  data: { point: string };
 }
 
 function About() {
@@ -63,7 +63,7 @@ function About() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
         <Navigation data={{ point: "MISSION" }} />
         <div className="flex flex-col md:flex-row mt-8 gap-6">
-          <div className="flex-shrink-0">
+          <div className="shrink-0">
             <LuBicepsFlexed className="text-5xl sm:text-6xl text-red-600" />
           </div>
           <div className="text-base sm:text-lg md:text-xl space-y-4 leading-relaxed text-gray-800">
@@ -98,7 +98,7 @@ function About() {
         <div className="mt-8 flex flex-col gap-8">
           {[1, 2].map((_, i) => (
             <div key={i} className="flex flex-col md:flex-row items-start gap-6">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <BiShieldPlus className="text-5xl sm:text-6xl text-green-600" />
               </div>
               <div>
